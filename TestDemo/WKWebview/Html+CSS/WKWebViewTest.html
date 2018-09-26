@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>WKWebView</title>
+	<style>
+			input{
+				width: 100px;
+				height: 50px;
+				background-color: #ff6623;
+                margin:5% 0 0 30%;
+			}
+	</style>
+</head>
+
+<body>
+    <input type="button" onClick="alertTest1()" value="点击效果">
+        <script>
+            
+            function alertTest1(){
+<!--                alert('该吃饭了吧！');-->
+                window.webkit.messageHandlers.alertTest.postMessage('call js alert in js');
+            }
+        
+            function alertTest2() {
+                alert(1234567890);
+            }
+        </script>
+</body>
+</html>

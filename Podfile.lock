@@ -3,24 +3,28 @@ PODS:
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
   - SDWebImage/Core (4.4.1)
+  - SSKeychain (1.4.1)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Masonry (~> 1.1.0)
   - SDWebImage (~> 4.4.1)
+  - SSKeychain
   - SVProgressHUD (= 2.2.5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Masonry
     - SDWebImage
+    - SSKeychain
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: e6c2f09cc9f20c81071be4c47cc393c8f3c717a1
+PODFILE CHECKSUM: e78bfaaca0142e822aa85fbe6b3903700525aeda
 
 COCOAPODS: 1.5.3

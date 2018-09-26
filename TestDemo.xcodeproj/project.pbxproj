@@ -10,7 +10,6 @@
 		ACB85B06C6C6626665D0329A /* libPods-TestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9822F256F50F6020E4EEA80 /* libPods-TestDemo.a */; };
 		CA114408214D3F9100436F5D /* UIControl+Button.m in Sources */ = {isa = PBXBuildFile; fileRef = CA114407214D3F9100436F5D /* UIControl+Button.m */; };
 		CA11440C214FAD3200436F5D /* XZCWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA11440B214FAD3200436F5D /* XZCWKWebView.m */; };
-		CA11440F2150ED8500436F5D /* WKWebViewTest.html in Resources */ = {isa = PBXBuildFile; fileRef = CA11440E2150ED8500436F5D /* WKWebViewTest.html */; };
 		CA1144122153458E00436F5D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1144112153458E00436F5D /* WebViewController.m */; };
 		CA3514C52149F723000180EC /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3514C32149F723000180EC /* ThreadViewController.m */; };
 		CA3514C62149F723000180EC /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3514C42149F723000180EC /* ThreadViewController.xib */; };
@@ -18,6 +17,8 @@
 		CA3514D1214BB9BD000180EC /* SocketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3514CE214BB9BD000180EC /* SocketViewController.xib */; };
 		CA3514D6214BBAA4000180EC /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3514D4214BBAA4000180EC /* RuntimeViewController.m */; };
 		CA3514D7214BBAA4000180EC /* RuntimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3514D5214BBAA4000180EC /* RuntimeViewController.xib */; };
+		CA3609BA215B7D9A00DCDF96 /* SSKeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3609B9215B7D9A00DCDF96 /* SSKeyChainViewController.m */; };
+		CA3609BC215B84FF00DCDF96 /* WKWebViewTest.html in Resources */ = {isa = PBXBuildFile; fileRef = CA3609BB215B84FF00DCDF96 /* WKWebViewTest.html */; };
 		CAC292BD2147AF89001C0B00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC292BC2147AF89001C0B00 /* AppDelegate.m */; };
 		CAC292C02147AF89001C0B00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC292BF2147AF89001C0B00 /* ViewController.m */; };
 		CAC292C32147AF89001C0B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC292C12147AF89001C0B00 /* Main.storyboard */; };
@@ -58,7 +59,6 @@
 		CA114407214D3F9100436F5D /* UIControl+Button.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Button.m"; sourceTree = "<group>"; };
 		CA11440A214FAD3200436F5D /* XZCWKWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XZCWKWebView.h; sourceTree = "<group>"; };
 		CA11440B214FAD3200436F5D /* XZCWKWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZCWKWebView.m; sourceTree = "<group>"; };
-		CA11440E2150ED8500436F5D /* WKWebViewTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = WKWebViewTest.html; path = ../../../../WKWebViewTest.html; sourceTree = "<group>"; };
 		CA1144102153458E00436F5D /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		CA1144112153458E00436F5D /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		CA3514C22149F723000180EC /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
@@ -70,6 +70,9 @@
 		CA3514D3214BBAA4000180EC /* RuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
 		CA3514D4214BBAA4000180EC /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
 		CA3514D5214BBAA4000180EC /* RuntimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuntimeViewController.xib; sourceTree = "<group>"; };
+		CA3609B8215B7D9A00DCDF96 /* SSKeyChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSKeyChainViewController.h; sourceTree = "<group>"; };
+		CA3609B9215B7D9A00DCDF96 /* SSKeyChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSKeyChainViewController.m; sourceTree = "<group>"; };
+		CA3609BB215B84FF00DCDF96 /* WKWebViewTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewTest.html; sourceTree = "<group>"; };
 		CAC292B82147AF89001C0B00 /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC292BB2147AF89001C0B00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CAC292BC2147AF89001C0B00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -157,7 +160,7 @@
 		CA11440D2150DD1C00436F5D /* Html+CSS */ = {
 			isa = PBXGroup;
 			children = (
-				CA11440E2150ED8500436F5D /* WKWebViewTest.html */,
+				CA3609BB215B84FF00DCDF96 /* WKWebViewTest.html */,
 			);
 			path = "Html+CSS";
 			sourceTree = "<group>";
@@ -194,6 +197,15 @@
 			path = Runtime;
 			sourceTree = "<group>";
 		};
+		CA3609B7215B7D7A00DCDF96 /* SSKeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				CA3609B8215B7D9A00DCDF96 /* SSKeyChainViewController.h */,
+				CA3609B9215B7D9A00DCDF96 /* SSKeyChainViewController.m */,
+			);
+			path = SSKeyChain;
+			sourceTree = "<group>";
+		};
 		CAC292AF2147AF89001C0B00 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +231,7 @@
 		CAC292BA2147AF89001C0B00 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CA3609B7215B7D7A00DCDF96 /* SSKeyChain */,
 				CA114409214FACFF00436F5D /* WKWebview */,
 				CA3514D2214BBA17000180EC /* Runtime */,
 				CA3514CC214BB9BD000180EC /* Socket */,
@@ -378,7 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA11440F2150ED8500436F5D /* WKWebViewTest.html in Resources */,
+				CA3609BC215B84FF00DCDF96 /* WKWebViewTest.html in Resources */,
 				CAC292C82147AF8C001C0B00 /* LaunchScreen.storyboard in Resources */,
 				CAC292C52147AF8C001C0B00 /* Assets.xcassets in Resources */,
 				CA3514D7214BBAA4000180EC /* RuntimeViewController.xib in Resources */,
@@ -413,10 +426,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo-resources.sh",
+				"${PODS_ROOT}/SSKeychain/Support/SSKeychain.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SSKeychain.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +466,7 @@
 			files = (
 				CA3514C52149F723000180EC /* ThreadViewController.m in Sources */,
 				CA11440C214FAD3200436F5D /* XZCWKWebView.m in Sources */,
+				CA3609BA215B7D9A00DCDF96 /* SSKeyChainViewController.m in Sources */,
 				CAC292C02147AF89001C0B00 /* ViewController.m in Sources */,
 				CAC293152147C4A3001C0B00 /* PAMultipleDelegateManager.m in Sources */,
 				CA114408214D3F9100436F5D /* UIControl+Button.m in Sources */,

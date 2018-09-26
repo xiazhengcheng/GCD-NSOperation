@@ -12,6 +12,7 @@
 #import "RuntimeViewController.h"
 #import "XZCWKWebView.h"
 #import "WebViewController.h"
+#import "SSKeyChainViewController.h"
 @interface ViewController ()
 
 @end
@@ -21,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"分类";
-    _dataArray = [[NSMutableArray alloc] initWithObjects:@"多代理的实现",@"多线程",@"runtime方法替换",@"UIWebView",@"WKWebView", nil];
+    _dataArray = [[NSMutableArray alloc] initWithObjects:@"多代理的实现",@"多线程",@"runtime方法替换",@"UIWebView",@"WKWebView",@"SSKeychain", nil];
     [self createTabView];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -87,6 +88,11 @@
         case 4:{
             XZCWKWebView *xvc = [[XZCWKWebView alloc] init];
             [self.navigationController pushViewController:xvc animated:YES];
+        }
+            break;
+        case 5:{
+            SSKeyChainViewController *svc = [[SSKeyChainViewController alloc] init];
+            [self.navigationController pushViewController:svc animated:YES];
         }
             break;
         default:

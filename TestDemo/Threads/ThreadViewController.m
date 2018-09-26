@@ -162,7 +162,9 @@
 - (IBAction)nsOperationClick:(id)sender {
 //    [self NSBlockOperationTask];
     [self NSInvocationOperationTask:@"12"];
+
 }
+
 
 - (void)NSInvocationOperationTask:(id)data {
     
