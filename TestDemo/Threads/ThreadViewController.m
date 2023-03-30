@@ -41,9 +41,45 @@
     self.imageView1.backgroundColor = [UIColor yellowColor];
     self.imageView2.backgroundColor = [UIColor yellowColor];
     self.imageView3.backgroundColor = [UIColor yellowColor];
-
+    
     [self setUpConstrance];
     
+    [self barrierTest];
+}
+
+#pragma mark - 栅栏函数barriay
+- (void)barrierTest {
+    dispatch_queue_t queue = dispatch_queue_create("myqueue", DISPATCH_QUEUE_CONCURRENT);
+    //dispatch_get_global_queue(0, 0);
+    NSLog(@"pre 1");
+    dispatch_async(queue, ^{
+//        sleep(1);
+        NSLog(@"task 1");
+    });
+    
+    NSLog(@"pre 2");
+    dispatch_async(queue, ^{
+        NSLog(@"%@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"task 2");
+    });
+    
+    NSLog(@"pre barrier");
+    dispatch_barrier_sync(queue, ^{
+        NSLog(@"%@",[NSThread currentThread]);
+        NSLog(@"=========barrier==============");
+    });
+    
+    NSLog(@"pre 3");
+    dispatch_async(queue, ^{
+        NSLog(@"task 3");
+    });
+    
+    NSLog(@"pre 4");
+    
+    dispatch_async(queue, ^{
+        NSLog(@"task 4");
+    });
 }
 
 #pragma mark - masonary布局
@@ -92,22 +128,22 @@
         NSData *data = [NSData dataWithContentsOfURL:url];
         UIImage *image = [UIImage imageWithData:data];
         NSLog(@"123");
-
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             self.imageView1.image = image;
         });
-//        sleep(2);
+        //        sleep(2);
     });
     //栅栏函数的使用可以是上面的线程先执行完再去执行下面的线程
-//    dispatch_barrier_async(conCurrentQueue, ^{
-//        NSLog(@"----barrier-----%@", [NSThread currentThread]);
-//    });
+    //    dispatch_barrier_async(conCurrentQueue, ^{
+    //        NSLog(@"----barrier-----%@", [NSThread currentThread]);
+    //    });
     dispatch_async(conCurrentQueue, ^{
         NSURL *url = [NSURL URLWithString:@"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2063724715,1253364800&fm=27&gp=0.jpg"];
         NSData *data = [NSData dataWithContentsOfURL:url];
         UIImage *image = [UIImage imageWithData:data];
         NSLog(@"456");
-
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             self.imageView2.image = image;
         });
@@ -118,7 +154,7 @@
         NSData *data = [NSData dataWithContentsOfURL:url];
         UIImage *image = [UIImage imageWithData:data];
         NSLog(@"789");
-
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             self.imageView3.image = image;
         });
@@ -143,7 +179,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             self.imageView2.image = image;
         });
-//        sleep(2);
+        //        sleep(2);
     });
     
     dispatch_sync(serialQueue, ^{
@@ -151,7 +187,7 @@
         NSData *data = [NSData dataWithContentsOfURL:url];
         UIImage *image = [UIImage imageWithData:data];
         NSLog(@"789");
-
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             self.imageView3.image = image;
         });
@@ -160,9 +196,9 @@
 }
 
 - (IBAction)nsOperationClick:(id)sender {
-//    [self NSBlockOperationTask];
+    //    [self NSBlockOperationTask];
     [self NSInvocationOperationTask:@"12"];
-
+    
 }
 
 
@@ -177,10 +213,10 @@
     
     NSInvocationOperation *theOp3 = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(theOpTask3:) object:data];
     
-
+    
     //同时NSOperation可以添加线程依赖
-//    [theOp1 addDependency:theOp3];
-//    [theOp1 addDependency:theOp2];
+    //    [theOp1 addDependency:theOp3];
+    //    [theOp1 addDependency:theOp2];
     
     [queue addOperation:theOp1];
     [queue addOperation:theOp2];
@@ -219,7 +255,7 @@
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         self.imageView3.image = image;
     }];
-
+    
 }
 - (void)NSBlockOperationTask {
     NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
@@ -228,7 +264,7 @@
     
     [operation addExecutionBlock:^{
         NSLog(@"执行2操作，线程%@",[NSThread currentThread]);
-
+        
     }];
     
     [operation addExecutionBlock:^{
@@ -241,15 +277,15 @@
         
     }];
     [operation start];
-
+    
 }
 
 /**
-NSInvocationOperation
+ NSInvocationOperation
  */
 
 /**
-NSBlockOperation
+ NSBlockOperation
  */
 
 /**
@@ -261,13 +297,13 @@ NSBlockOperation
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

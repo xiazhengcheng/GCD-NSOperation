@@ -35,10 +35,10 @@
     [self.view addSubview:self.tabView];
 
     [self.tabView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.view.mas_left).offset(0);
-        make.top.equalTo(self.view.mas_top).offset(64);
+        make.left.equalTo(self.view.mas_left);
+        make.top.equalTo(self.view.mas_top);
         make.width.mas_equalTo(ScreenWidth);
-        make.height.mas_equalTo(ScreenHeight - 64);
+        make.height.mas_equalTo(ScreenHeight);
     }];
 
 }

@@ -21,11 +21,6 @@
     UINavigationController *navc = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = navc;
     
-    NSMutableArray *firstArray = [NSMutableArray array];
-    NSMutableArray *secondArray = [NSMutableArray array];
-    [firstArray addObject:secondArray];
-    [secondArray addObject:firstArray];
-    
     [SVProgressHUD setMinimumDismissTimeInterval:1.5];
     return YES;
 }

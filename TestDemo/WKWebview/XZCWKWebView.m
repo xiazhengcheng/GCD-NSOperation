@@ -62,7 +62,7 @@
     
     [wkWebView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.view);
-        make.top.mas_equalTo(self.view).offset(64);
+        make.top.mas_equalTo(self.view);
         make.width.mas_equalTo(ScreenWidth);
         make.height.mas_equalTo(ScreenHeight);
     }];
