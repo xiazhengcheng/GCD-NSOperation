@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85DBA12129D673D900CED1AD /* UIView+MyUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12029D673D900CED1AD /* UIView+MyUIView.m */; };
+		85DBA12429D67B5C00CED1AD /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12329D67B5C00CED1AD /* CategoryViewController.m */; };
+		85DBA12729D680A800CED1AD /* UIButton+MyUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12629D680A800CED1AD /* UIButton+MyUIButton.m */; };
+		85DBA12A29D682B400CED1AD /* UIButton+OtherButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12929D682B400CED1AD /* UIButton+OtherButton.m */; };
+		85DBA12F29D6C9AB00CED1AD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12E29D6C9AB00CED1AD /* Person.m */; };
+		85DBA13229D6C9C000CED1AD /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA13129D6C9C000CED1AD /* Student.m */; };
 		ACB85B06C6C6626665D0329A /* libPods-TestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9822F256F50F6020E4EEA80 /* libPods-TestDemo.a */; };
 		CA114408214D3F9100436F5D /* UIControl+Button.m in Sources */ = {isa = PBXBuildFile; fileRef = CA114407214D3F9100436F5D /* UIControl+Button.m */; };
 		CA11440C214FAD3200436F5D /* XZCWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA11440B214FAD3200436F5D /* XZCWKWebView.m */; };
@@ -52,6 +58,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85DBA11F29D673D900CED1AD /* UIView+MyUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MyUIView.h"; sourceTree = "<group>"; };
+		85DBA12029D673D900CED1AD /* UIView+MyUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MyUIView.m"; sourceTree = "<group>"; };
+		85DBA12229D67B5C00CED1AD /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		85DBA12329D67B5C00CED1AD /* CategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		85DBA12529D680A800CED1AD /* UIButton+MyUIButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MyUIButton.h"; sourceTree = "<group>"; };
+		85DBA12629D680A800CED1AD /* UIButton+MyUIButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MyUIButton.m"; sourceTree = "<group>"; };
+		85DBA12829D682B400CED1AD /* UIButton+OtherButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+OtherButton.h"; sourceTree = "<group>"; };
+		85DBA12929D682B400CED1AD /* UIButton+OtherButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+OtherButton.m"; sourceTree = "<group>"; };
+		85DBA12B29D6856B00CED1AD /* UIButton+MYExtensionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MYExtensionButton.h"; sourceTree = "<group>"; };
+		85DBA12D29D6C9AB00CED1AD /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		85DBA12E29D6C9AB00CED1AD /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		85DBA13029D6C9C000CED1AD /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		85DBA13129D6C9C000CED1AD /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		8A69685781B17378E10DDE2B /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B33C14AFCAA8847C61F42E5D /* Pods-TestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C9822F256F50F6020E4EEA80 /* libPods-TestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +164,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		85DBA11E29D6729C00CED1AD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				85DBA11F29D673D900CED1AD /* UIView+MyUIView.h */,
+				85DBA12029D673D900CED1AD /* UIView+MyUIView.m */,
+				85DBA12229D67B5C00CED1AD /* CategoryViewController.h */,
+				85DBA12329D67B5C00CED1AD /* CategoryViewController.m */,
+				85DBA12529D680A800CED1AD /* UIButton+MyUIButton.h */,
+				85DBA12629D680A800CED1AD /* UIButton+MyUIButton.m */,
+				85DBA12829D682B400CED1AD /* UIButton+OtherButton.h */,
+				85DBA12929D682B400CED1AD /* UIButton+OtherButton.m */,
+				85DBA12B29D6856B00CED1AD /* UIButton+MYExtensionButton.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		85DBA12C29D6C98600CED1AD /* self&super */ = {
+			isa = PBXGroup;
+			children = (
+				85DBA12D29D6C9AB00CED1AD /* Person.h */,
+				85DBA12E29D6C9AB00CED1AD /* Person.m */,
+				85DBA13029D6C9C000CED1AD /* Student.h */,
+				85DBA13129D6C9C000CED1AD /* Student.m */,
+			);
+			path = "self&super";
+			sourceTree = "<group>";
+		};
 		CA114409214FACFF00436F5D /* WKWebview */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +277,8 @@
 		CAC292BA2147AF89001C0B00 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				85DBA12C29D6C98600CED1AD /* self&super */,
+				85DBA11E29D6729C00CED1AD /* Category */,
 				CA3609B7215B7D7A00DCDF96 /* SSKeyChain */,
 				CA114409214FACFF00436F5D /* WKWebview */,
 				CA3514D2214BBA17000180EC /* Runtime */,
@@ -461,8 +509,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DBA12429D67B5C00CED1AD /* CategoryViewController.m in Sources */,
+				85DBA12A29D682B400CED1AD /* UIButton+OtherButton.m in Sources */,
+				85DBA12F29D6C9AB00CED1AD /* Person.m in Sources */,
+				85DBA12729D680A800CED1AD /* UIButton+MyUIButton.m in Sources */,
+				85DBA12129D673D900CED1AD /* UIView+MyUIView.m in Sources */,
 				CA3514C52149F723000180EC /* ThreadViewController.m in Sources */,
 				CA11440C214FAD3200436F5D /* XZCWKWebView.m in Sources */,
+				85DBA13229D6C9C000CED1AD /* Student.m in Sources */,
 				CA3609BA215B7D9A00DCDF96 /* SSKeyChainViewController.m in Sources */,
 				CAC292C02147AF89001C0B00 /* ViewController.m in Sources */,
 				CAC293152147C4A3001C0B00 /* PAMultipleDelegateManager.m in Sources */,
