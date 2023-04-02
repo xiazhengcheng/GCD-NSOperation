@@ -11,10 +11,14 @@
 
 
 @interface FirstViewController ()<PassMessageDelegate>
-
 @end
 
 @implementation FirstViewController
+//使用synthesize的几种情况：
+//1对属性进行重新命名
+//2.重写了属性的setter和getter方法
+//3.实现了带有property属性的protocol
+//@synthesize name = newName;
 
 - (void)viewDidLoad {
     [super viewDidLoad];

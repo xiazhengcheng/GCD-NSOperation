@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8571793A29D92579005F9906 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571793929D92579005F9906 /* FirstViewController.m */; };
 		8571793D29D92587005F9906 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571793C29D92587005F9906 /* SecondViewController.m */; };
+		8573EE2E29D95C4A008A5DFC /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8573EE2D29D95C4A008A5DFC /* CopyViewController.m */; };
 		85DBA12129D673D900CED1AD /* UIView+MyUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12029D673D900CED1AD /* UIView+MyUIView.m */; };
 		85DBA12429D67B5C00CED1AD /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12329D67B5C00CED1AD /* CategoryViewController.m */; };
 		85DBA12729D680A800CED1AD /* UIButton+MyUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12629D680A800CED1AD /* UIButton+MyUIButton.m */; };
@@ -65,6 +66,8 @@
 		8571793929D92579005F9906 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		8571793B29D92587005F9906 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		8571793C29D92587005F9906 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8573EE2C29D95C4A008A5DFC /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
+		8573EE2D29D95C4A008A5DFC /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
 		85DBA11F29D673D900CED1AD /* UIView+MyUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MyUIView.h"; sourceTree = "<group>"; };
 		85DBA12029D673D900CED1AD /* UIView+MyUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MyUIView.m"; sourceTree = "<group>"; };
 		85DBA12229D67B5C00CED1AD /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -182,6 +185,15 @@
 				8571793C29D92587005F9906 /* SecondViewController.m */,
 			);
 			path = "delegate&block";
+			sourceTree = "<group>";
+		};
+		8571793E29D95C11005F9906 /* Copy&Mutcopy */ = {
+			isa = PBXGroup;
+			children = (
+				8573EE2C29D95C4A008A5DFC /* CopyViewController.h */,
+				8573EE2D29D95C4A008A5DFC /* CopyViewController.m */,
+			);
+			path = "Copy&Mutcopy";
 			sourceTree = "<group>";
 		};
 		85DBA11E29D6729C00CED1AD /* Category */ = {
@@ -305,6 +317,7 @@
 		CAC292BA2147AF89001C0B00 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8571793E29D95C11005F9906 /* Copy&Mutcopy */,
 				8571793729D9254D005F9906 /* delegate&block */,
 				85DBA13629D7005600CED1AD /* sort */,
 				85DBA12C29D6C98600CED1AD /* self&super */,
@@ -550,6 +563,7 @@
 				CA11440C214FAD3200436F5D /* XZCWKWebView.m in Sources */,
 				85DBA13829D7007300CED1AD /* Sort.swift in Sources */,
 				85DBA13229D6C9C000CED1AD /* Student.m in Sources */,
+				8573EE2E29D95C4A008A5DFC /* CopyViewController.m in Sources */,
 				CA3609BA215B7D9A00DCDF96 /* SSKeyChainViewController.m in Sources */,
 				CAC292C02147AF89001C0B00 /* ViewController.m in Sources */,
 				8571793D29D92587005F9906 /* SecondViewController.m in Sources */,

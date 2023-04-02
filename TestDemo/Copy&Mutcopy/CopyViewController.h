@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  CopyViewController.h
 //  TestDemo
 //
 //  Created by xiazhengcheng on 2023/4/2.
@@ -10,8 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FirstViewController : UIViewController
-@property (nonatomic,copy) NSString *name;
+@interface CopyViewController : UIViewController
+
+@property (nonatomic,copy) NSString *str;
+@property (nonatomic,copy) NSArray *array;
 @end
 
 NS_ASSUME_NONNULL_END
