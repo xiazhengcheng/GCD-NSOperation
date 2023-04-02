@@ -10,6 +10,8 @@
 #import "UIView+MyUIView.h"
 #import "UIButton+MyUIButton.h"
 #import "Student.h"
+#import <objc/message.h>
+#import "TestDemo-swift.h"
 
 @interface CategoryViewController () {
     UIButton *button;
@@ -26,14 +28,14 @@
     view.tag = 101;
     view.backgroundColor = [UIColor redColor];
     [self.view addSubview:view];
-        
+    
     button = [[UIButton alloc]init];
     [button setTitle:@"button" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
-
-
+    
+    
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(100);
         make.center.equalTo(self.view);
@@ -50,8 +52,21 @@
     
     NSLog(@"%@",[NSObject class]);
     NSLog(@"%@",[Student class]);
+    
+    
+    id cls = [CategoryViewController class];
+    void *obj = &cls;
+    [(__bridge id)obj speak];
+    
+    Class tls = [self class];
+    NSLog(@"%@",tls);
+    
+    Sort *sort = [[Sort alloc] init];
+    
+}
 
-
+- (void)speak{
+    NSLog(@"my name is %@",self.name);
 }
 
 - (void)buttonClick {
