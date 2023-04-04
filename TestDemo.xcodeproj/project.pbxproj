@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8500556A29DC5AE9009C0425 /* NSStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8500556929DC5AE9009C0425 /* NSStringViewController.m */; };
 		8500556D29DC5BBB009C0425 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8500556C29DC5BBB009C0425 /* BaseViewController.m */; };
+		8500557129DC6D9B009C0425 /* ISAExhangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8500557029DC6D9B009C0425 /* ISAExhangeViewController.m */; };
 		8571793A29D92579005F9906 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571793929D92579005F9906 /* FirstViewController.m */; };
 		8571793D29D92587005F9906 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571793C29D92587005F9906 /* SecondViewController.m */; };
 		8573EE2E29D95C4A008A5DFC /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8573EE2D29D95C4A008A5DFC /* CopyViewController.m */; };
@@ -69,6 +70,8 @@
 		8500556929DC5AE9009C0425 /* NSStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringViewController.m; sourceTree = "<group>"; };
 		8500556B29DC5BBB009C0425 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		8500556C29DC5BBB009C0425 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		8500556F29DC6D9B009C0425 /* ISAExhangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISAExhangeViewController.h; sourceTree = "<group>"; };
+		8500557029DC6D9B009C0425 /* ISAExhangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISAExhangeViewController.m; sourceTree = "<group>"; };
 		8571793829D92579005F9906 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		8571793929D92579005F9906 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		8571793B29D92587005F9906 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -182,6 +185,15 @@
 				C9822F256F50F6020E4EEA80 /* libPods-TestDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8500556E29DC6D61009C0425 /* Isa-swizzling */ = {
+			isa = PBXGroup;
+			children = (
+				8500556F29DC6D9B009C0425 /* ISAExhangeViewController.h */,
+				8500557029DC6D9B009C0425 /* ISAExhangeViewController.m */,
+			);
+			path = "Isa-swizzling";
 			sourceTree = "<group>";
 		};
 		8571793729D9254D005F9906 /* delegate&block */ = {
@@ -351,6 +363,7 @@
 		CAC292BA2147AF89001C0B00 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8500556E29DC6D61009C0425 /* Isa-swizzling */,
 				85B6497029DC5AAA00B48E3E /* NSString */,
 				85C0859329DBF86A005ED157 /* Base */,
 				85C0858E29DBF654005ED157 /* SwiftClass */,
@@ -608,6 +621,7 @@
 				8571793D29D92587005F9906 /* SecondViewController.m in Sources */,
 				8571793A29D92579005F9906 /* FirstViewController.m in Sources */,
 				CAC293152147C4A3001C0B00 /* PAMultipleDelegateManager.m in Sources */,
+				8500557129DC6D9B009C0425 /* ISAExhangeViewController.m in Sources */,
 				CA114408214D3F9100436F5D /* UIControl+Button.m in Sources */,
 				8500556A29DC5AE9009C0425 /* NSStringViewController.m in Sources */,
 				CAC2931B2148A66C001C0B00 /* CatTest.m in Sources */,

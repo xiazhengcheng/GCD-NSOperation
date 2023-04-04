@@ -18,6 +18,7 @@
 #import "FirstViewController.h"
 #import "CopyViewController.h"
 #import "NSStringViewController.h"
+#import "Isa-swizzling/ISAExhangeViewController.h"
 #import "TestDemo-Swift.h"
 
 
@@ -30,18 +31,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"分类";
-    _dataArray = [[NSMutableArray alloc] initWithObjects:@"多代理的实现",@"多线程",@"runtime方法替换",@"UIWebView",@"WKWebView",@"SSKeychain", @"Category", @"delegate&&block",@"copy",@"swiftClosure",@"字符串", nil];
+    _dataArray = [[NSMutableArray alloc] initWithObjects:@"多代理的实现",@"多线程",@"runtime方法替换",@"UIWebView",@"WKWebView",@"SSKeychain", @"Category", @"delegate&&block",@"copy",@"swiftClosure",@"字符串",@"ISA_change", nil];
     [self createTabView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)createTabView {
     self.tabView = [[UITableView alloc] init];
-//    self.tabView.backgroundColor = [UIColor redColor];
+    //    self.tabView.backgroundColor = [UIColor redColor];
     self.tabView.delegate = self;
     self.tabView.dataSource = self;
     [self.view addSubview:self.tabView];
-
+    
     [self.tabView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view.mas_left);
         make.top.equalTo(self.view.mas_top);
@@ -125,6 +126,11 @@
         case 10:{
             NSStringViewController *nvc = [[NSStringViewController alloc] init];
             [self.navigationController pushViewController: nvc animated:YES];
+        }
+            break;
+        case 11:{
+            ISAExhangeViewController *ivc = [[ISAExhangeViewController alloc] init];
+            [self.navigationController pushViewController: ivc animated:YES];
         }
             break;
         default:
