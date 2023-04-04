@@ -21,8 +21,6 @@
     NSString *oldStr = [self.str copy];
     NSString *mutStr = [self.str mutableCopy];
     NSLog(@"str:%p---oldStr:%p---mutStr:%p",&_str,&oldStr, &mutStr);
-    [self performSelector:<#(nonnull SEL)#> withObject:<#(nullable id)#> afterDelay:<#(NSTimeInterval)#>];
-    [self performSelector:<#(nonnull SEL)#> withObject:<#(nullable id)#> afterDelay:<#(NSTimeInterval)#>]
 }
 
 @end

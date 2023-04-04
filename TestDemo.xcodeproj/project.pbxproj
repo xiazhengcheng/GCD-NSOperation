@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8500556A29DC5AE9009C0425 /* NSStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8500556929DC5AE9009C0425 /* NSStringViewController.m */; };
+		8500556D29DC5BBB009C0425 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8500556C29DC5BBB009C0425 /* BaseViewController.m */; };
 		8571793A29D92579005F9906 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571793929D92579005F9906 /* FirstViewController.m */; };
 		8571793D29D92587005F9906 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571793C29D92587005F9906 /* SecondViewController.m */; };
 		8573EE2E29D95C4A008A5DFC /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8573EE2D29D95C4A008A5DFC /* CopyViewController.m */; };
+		85C0859229DBF6CF005ED157 /* ClosuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0859129DBF6CF005ED157 /* ClosuresViewController.swift */; };
 		85DBA12129D673D900CED1AD /* UIView+MyUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12029D673D900CED1AD /* UIView+MyUIView.m */; };
 		85DBA12429D67B5C00CED1AD /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12329D67B5C00CED1AD /* CategoryViewController.m */; };
 		85DBA12729D680A800CED1AD /* UIButton+MyUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12629D680A800CED1AD /* UIButton+MyUIButton.m */; };
@@ -62,12 +65,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8500556829DC5AE9009C0425 /* NSStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringViewController.h; sourceTree = "<group>"; };
+		8500556929DC5AE9009C0425 /* NSStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringViewController.m; sourceTree = "<group>"; };
+		8500556B29DC5BBB009C0425 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8500556C29DC5BBB009C0425 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		8571793829D92579005F9906 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		8571793929D92579005F9906 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		8571793B29D92587005F9906 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		8571793C29D92587005F9906 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		8573EE2C29D95C4A008A5DFC /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
 		8573EE2D29D95C4A008A5DFC /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
+		85C0859129DBF6CF005ED157 /* ClosuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresViewController.swift; sourceTree = "<group>"; };
 		85DBA11F29D673D900CED1AD /* UIView+MyUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MyUIView.h"; sourceTree = "<group>"; };
 		85DBA12029D673D900CED1AD /* UIView+MyUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MyUIView.m"; sourceTree = "<group>"; };
 		85DBA12229D67B5C00CED1AD /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -196,6 +204,32 @@
 			path = "Copy&Mutcopy";
 			sourceTree = "<group>";
 		};
+		85B6497029DC5AAA00B48E3E /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				8500556829DC5AE9009C0425 /* NSStringViewController.h */,
+				8500556929DC5AE9009C0425 /* NSStringViewController.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		85C0858E29DBF654005ED157 /* SwiftClass */ = {
+			isa = PBXGroup;
+			children = (
+				85C0859129DBF6CF005ED157 /* ClosuresViewController.swift */,
+			);
+			path = SwiftClass;
+			sourceTree = "<group>";
+		};
+		85C0859329DBF86A005ED157 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8500556B29DC5BBB009C0425 /* BaseViewController.h */,
+				8500556C29DC5BBB009C0425 /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		85DBA11E29D6729C00CED1AD /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +351,9 @@
 		CAC292BA2147AF89001C0B00 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				85B6497029DC5AAA00B48E3E /* NSString */,
+				85C0859329DBF86A005ED157 /* Base */,
+				85C0858E29DBF654005ED157 /* SwiftClass */,
 				8571793E29D95C11005F9906 /* Copy&Mutcopy */,
 				8571793729D9254D005F9906 /* delegate&block */,
 				85DBA13629D7005600CED1AD /* sort */,
@@ -559,6 +596,8 @@
 				85DBA12F29D6C9AB00CED1AD /* Person.m in Sources */,
 				85DBA12729D680A800CED1AD /* UIButton+MyUIButton.m in Sources */,
 				85DBA12129D673D900CED1AD /* UIView+MyUIView.m in Sources */,
+				8500556D29DC5BBB009C0425 /* BaseViewController.m in Sources */,
+				85C0859229DBF6CF005ED157 /* ClosuresViewController.swift in Sources */,
 				CA3514C52149F723000180EC /* ThreadViewController.m in Sources */,
 				CA11440C214FAD3200436F5D /* XZCWKWebView.m in Sources */,
 				85DBA13829D7007300CED1AD /* Sort.swift in Sources */,
@@ -570,6 +609,7 @@
 				8571793A29D92579005F9906 /* FirstViewController.m in Sources */,
 				CAC293152147C4A3001C0B00 /* PAMultipleDelegateManager.m in Sources */,
 				CA114408214D3F9100436F5D /* UIControl+Button.m in Sources */,
+				8500556A29DC5AE9009C0425 /* NSStringViewController.m in Sources */,
 				CAC2931B2148A66C001C0B00 /* CatTest.m in Sources */,
 				CA1144122153458E00436F5D /* WebViewController.m in Sources */,
 				CAC293182148A660001C0B00 /* DogTest.m in Sources */,

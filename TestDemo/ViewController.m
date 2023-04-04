@@ -17,6 +17,8 @@
 #import "CategoryViewController.h"
 #import "FirstViewController.h"
 #import "CopyViewController.h"
+#import "NSStringViewController.h"
+#import "TestDemo-Swift.h"
 
 
 @interface ViewController ()
@@ -28,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"分类";
-    _dataArray = [[NSMutableArray alloc] initWithObjects:@"多代理的实现",@"多线程",@"runtime方法替换",@"UIWebView",@"WKWebView",@"SSKeychain", @"Category", @"delegate&&block",@"copy", nil];
+    _dataArray = [[NSMutableArray alloc] initWithObjects:@"多代理的实现",@"多线程",@"runtime方法替换",@"UIWebView",@"WKWebView",@"SSKeychain", @"Category", @"delegate&&block",@"copy",@"swiftClosure",@"字符串", nil];
     [self createTabView];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -113,6 +115,16 @@
         case 8:{
             CopyViewController *cvc = [[CopyViewController alloc] init];
             [self.navigationController pushViewController:cvc animated:YES];
+        }
+            break;
+        case 9:{
+            ClosuresViewController *cvc = [[ClosuresViewController alloc] init];
+            [self.navigationController pushViewController:cvc animated:YES];
+        }
+            break;
+        case 10:{
+            NSStringViewController *nvc = [[NSStringViewController alloc] init];
+            [self.navigationController pushViewController: nvc animated:YES];
         }
             break;
         default:

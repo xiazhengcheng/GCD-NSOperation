@@ -40,6 +40,19 @@
         make.top.equalTo(button.mas_bottom).offset(50);
         make.centerX.equalTo(self.view);
     }];
+    [self testBlock];
+}
+
+- (void)testBlock {
+    static int height = 30;
+    __block int age = 20;
+    void(^block)(void) = ^ {
+        NSLog(@"height:%d---age:%d",height,age);
+    };
+    
+    age = 25;
+    height = 35;
+    block();
 }
 
 - (void)back {
