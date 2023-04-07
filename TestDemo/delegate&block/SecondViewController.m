@@ -7,8 +7,11 @@
 //
 
 #import "SecondViewController.h"
+#import "CodyProxy.h"
+#import "TestProy.h"
 
 @interface SecondViewController ()
+@property (nonatomic,copy) NSTimer *timer;
 
 @end
 
@@ -41,6 +44,28 @@
         make.centerX.equalTo(self.view);
     }];
     [self testBlock];
+    [self testTimer];
+    
+}
+
+//timer循环引用问题
+- (void)testTimer {
+    //第一种方式
+    //    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target: [CodyProxy proxyWithTarget:self] selector:@selector(timerSelector) userInfo:nil repeats:YES];
+    //第二种方式
+//    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target: [TestProy proxyWithTarget:self] selector:@selector(timerSelector) userInfo:nil repeats:YES];
+    //方式三：
+    if (@available(iOS 10.0, *)) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+            NSLog(@"1");
+        }];
+    } else {
+        // Fallback on earlier versions
+    };
+}
+
+- (void)timerSelector {
+    NSLog(@"1");
 }
 
 - (void)testBlock {
@@ -65,7 +90,12 @@
 - (void)blockBack {
     self.blockMessage(@"true");
     [self.navigationController popViewControllerAnimated:YES];
+    
+}
 
+-(void)dealloc {
+    [_timer invalidate];
+    NSLog(@"dealloc");
 }
 
 @end

@@ -24,6 +24,8 @@
 		85E4567F29DFB1AB00DA9A95 /* NSObject+Cody_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E4567E29DFB1AB00DA9A95 /* NSObject+Cody_KVO.m */; };
 		85E4568229DFBCD100DA9A95 /* CodyObserveInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E4568129DFBCD100DA9A95 /* CodyObserveInfo.m */; };
 		85E4568529DFC0FA00DA9A95 /* SelfKvoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E4568429DFC0FA00DA9A95 /* SelfKvoViewController.m */; };
+		85E4568D29E03F5A00DA9A95 /* CodyProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E4568C29E03F5A00DA9A95 /* CodyProxy.m */; };
+		85E4569029E0410900DA9A95 /* TestProy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E4568F29E0410900DA9A95 /* TestProy.m */; };
 		ACB85B06C6C6626665D0329A /* libPods-TestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9822F256F50F6020E4EEA80 /* libPods-TestDemo.a */; };
 		CA114408214D3F9100436F5D /* UIControl+Button.m in Sources */ = {isa = PBXBuildFile; fileRef = CA114407214D3F9100436F5D /* UIControl+Button.m */; };
 		CA11440C214FAD3200436F5D /* XZCWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA11440B214FAD3200436F5D /* XZCWKWebView.m */; };
@@ -103,6 +105,10 @@
 		85E4568129DFBCD100DA9A95 /* CodyObserveInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodyObserveInfo.m; sourceTree = "<group>"; };
 		85E4568329DFC0FA00DA9A95 /* SelfKvoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfKvoViewController.h; sourceTree = "<group>"; };
 		85E4568429DFC0FA00DA9A95 /* SelfKvoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfKvoViewController.m; sourceTree = "<group>"; };
+		85E4568B29E03F5A00DA9A95 /* CodyProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodyProxy.h; sourceTree = "<group>"; };
+		85E4568C29E03F5A00DA9A95 /* CodyProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodyProxy.m; sourceTree = "<group>"; };
+		85E4568E29E0410900DA9A95 /* TestProy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestProy.h; sourceTree = "<group>"; };
+		85E4568F29E0410900DA9A95 /* TestProy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProy.m; sourceTree = "<group>"; };
 		8A69685781B17378E10DDE2B /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B33C14AFCAA8847C61F42E5D /* Pods-TestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C9822F256F50F6020E4EEA80 /* libPods-TestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +218,10 @@
 				8571793929D92579005F9906 /* FirstViewController.m */,
 				8571793B29D92587005F9906 /* SecondViewController.h */,
 				8571793C29D92587005F9906 /* SecondViewController.m */,
+				85E4568B29E03F5A00DA9A95 /* CodyProxy.h */,
+				85E4568C29E03F5A00DA9A95 /* CodyProxy.m */,
+				85E4568E29E0410900DA9A95 /* TestProy.h */,
+				85E4568F29E0410900DA9A95 /* TestProy.m */,
 			);
 			path = "delegate&block";
 			sourceTree = "<group>";
@@ -633,6 +643,7 @@
 				85DBA12F29D6C9AB00CED1AD /* Person.m in Sources */,
 				85DBA12729D680A800CED1AD /* UIButton+MyUIButton.m in Sources */,
 				85DBA12129D673D900CED1AD /* UIView+MyUIView.m in Sources */,
+				85E4569029E0410900DA9A95 /* TestProy.m in Sources */,
 				8500556D29DC5BBB009C0425 /* BaseViewController.m in Sources */,
 				85C0859229DBF6CF005ED157 /* ClosuresViewController.swift in Sources */,
 				CA3514C52149F723000180EC /* ThreadViewController.m in Sources */,
@@ -650,6 +661,7 @@
 				85E4568529DFC0FA00DA9A95 /* SelfKvoViewController.m in Sources */,
 				8500556A29DC5AE9009C0425 /* NSStringViewController.m in Sources */,
 				CAC2931B2148A66C001C0B00 /* CatTest.m in Sources */,
+				85E4568D29E03F5A00DA9A95 /* CodyProxy.m in Sources */,
 				CA1144122153458E00436F5D /* WebViewController.m in Sources */,
 				CAC293182148A660001C0B00 /* DogTest.m in Sources */,
 				CAC292CB2147AF8C001C0B00 /* main.m in Sources */,
