@@ -24,15 +24,17 @@ class RxTableviewSectionViewController: BaseViewController {
         self.title = "组tableview"
         createTableview()
         bindModel()
+        RxTableEvent()
 
     }
 }
 
-extension RxTableviewSectionViewController {
+extension RxTableviewSectionViewController: UITableViewDelegate {
     func createTableview() {
         sectionTableView = UITableView(frame: self.view.bounds, style: .plain)
         let nib = UINib.init(nibName: "RxTabviewCell", bundle: nil)
         sectionTableView.register(nib, forCellReuseIdentifier: resUedId)
+        sectionTableView.delegate = self
         self.view.addSubview(sectionTableView)
     }
     
@@ -49,6 +51,20 @@ extension RxTableviewSectionViewController {
         sectionData.sectionArr.asDriver(onErrorJustReturn: [])
             .drive(sectionTableView.rx.items(dataSource: datas))
             .disposed(by: disposeBag)
+    }
+    
+    func RxTableEvent() {
+        sectionTableView.rx.modelSelected(SectionDataModel.self).subscribe { [weak self](model) in
+            print("modelSelected触发了cell点击，\(model)")
+        }.disposed(by: disposeBag)
 
+        sectionTableView.rx.itemDeleted.subscribe(onNext: {index in
+            print(index)
+        })
+        .disposed(by: disposeBag)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
 }
