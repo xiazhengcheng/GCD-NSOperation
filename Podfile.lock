@@ -1,30 +1,76 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Differentiator (5.0.0)
   - Masonry (1.1.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
   - SDWebImage/Core (4.4.1)
+  - SnapKit (4.2.0)
   - SSKeychain (1.4.1)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - AFNetworking (~> 4.0)
   - Masonry (~> 1.1.0)
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
   - SDWebImage (~> 4.4.1)
+  - SnapKit
   - SSKeychain
   - SVProgressHUD (= 2.2.5)
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
+    - Differentiator
     - Masonry
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
     - SDWebImage
+    - SnapKit
     - SSKeychain
     - SVProgressHUD
 
 SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 78c6dec84718da5158a17dff19be8fbdf9e8acdd
+PODFILE CHECKSUM: 448d2e87a2fc3adb4738b04d42ba7920bcdfc15e
 
 COCOAPODS: 1.11.3

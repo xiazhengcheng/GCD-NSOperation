@@ -8,7 +8,9 @@
 
 #import "FirstViewController.h"
 #import "SecondViewController.h"
-
+#import "OCNetWorkManager.h"
+#import <AFNetworking/AFNetworking.h>
+#import "UIImageView+WebCache.h"
 
 @interface FirstViewController ()<PassMessageDelegate>
 @end
@@ -43,6 +45,26 @@
     [blockbutton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(100);
         make.top.mas_equalTo(button.mas_bottom).offset(50);
+        make.centerX.equalTo(self.view);
+    }];
+    
+    [OCNetWorkManager requestWithOject:@{} successBlock:^(NSDictionary * _Nonnull dict) {
+        NSLog(@"response:%@",dict);
+    } failureBlock:^(NSDictionary * _Nonnull dict) {
+        NSLog(@"error");
+    }];
+    
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.backgroundColor = [UIColor yellowColor];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:@"https://img1.baidu.com/it/u=413643897,2296924942&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500"] placeholderImage:[UIImage imageNamed:@""] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        NSLog(@"图片加载完成");
+    }];
+    
+    [self.view addSubview:imageView];
+    
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.mas_equalTo(200);
+        make.top.equalTo(blockbutton.mas_bottom).offset(20);
         make.centerX.equalTo(self.view);
     }];
 }

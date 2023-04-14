@@ -10,10 +10,17 @@
 		8500556A29DC5AE9009C0425 /* NSStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8500556929DC5AE9009C0425 /* NSStringViewController.m */; };
 		8500556D29DC5BBB009C0425 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8500556C29DC5BBB009C0425 /* BaseViewController.m */; };
 		8500557129DC6D9B009C0425 /* ISAExhangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8500557029DC6D9B009C0425 /* ISAExhangeViewController.m */; };
+		850DC39129E6FC5300333DBB /* RxTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850DC39029E6FC5300333DBB /* RxTextViewController.swift */; };
+		8528576C29E1AEA100DDDD11 /* OCNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8528576B29E1AEA100DDDD11 /* OCNetWorkManager.m */; };
 		8571793A29D92579005F9906 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571793929D92579005F9906 /* FirstViewController.m */; };
 		8571793D29D92587005F9906 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571793C29D92587005F9906 /* SecondViewController.m */; };
 		8573EE2E29D95C4A008A5DFC /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8573EE2D29D95C4A008A5DFC /* CopyViewController.m */; };
 		85C0859229DBF6CF005ED157 /* ClosuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0859129DBF6CF005ED157 /* ClosuresViewController.swift */; };
+		85C0A03629E8EFE500027A17 /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0A03529E8EFE500027A17 /* RxTableViewController.swift */; };
+		85C0A03929E8F79A00027A17 /* RxTabviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0A03729E8F79A00027A17 /* RxTabviewCell.swift */; };
+		85C0A03A29E8F79A00027A17 /* RxTabviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C0A03829E8F79A00027A17 /* RxTabviewCell.xib */; };
+		85C0A03C29E8FFF700027A17 /* RxTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0A03B29E8FFF700027A17 /* RxTableModel.swift */; };
+		85C0A03E29E9259700027A17 /* RxTableviewSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0A03D29E9259700027A17 /* RxTableviewSectionViewController.swift */; };
 		85DBA12129D673D900CED1AD /* UIView+MyUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12029D673D900CED1AD /* UIView+MyUIView.m */; };
 		85DBA12429D67B5C00CED1AD /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12329D67B5C00CED1AD /* CategoryViewController.m */; };
 		85DBA12729D680A800CED1AD /* UIButton+MyUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12629D680A800CED1AD /* UIButton+MyUIButton.m */; };
@@ -77,6 +84,9 @@
 		8500556C29DC5BBB009C0425 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		8500556F29DC6D9B009C0425 /* ISAExhangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISAExhangeViewController.h; sourceTree = "<group>"; };
 		8500557029DC6D9B009C0425 /* ISAExhangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISAExhangeViewController.m; sourceTree = "<group>"; };
+		850DC39029E6FC5300333DBB /* RxTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTextViewController.swift; sourceTree = "<group>"; };
+		8528576A29E1AEA100DDDD11 /* OCNetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCNetWorkManager.h; sourceTree = "<group>"; };
+		8528576B29E1AEA100DDDD11 /* OCNetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCNetWorkManager.m; sourceTree = "<group>"; };
 		8571793829D92579005F9906 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		8571793929D92579005F9906 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		8571793B29D92587005F9906 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -84,6 +94,11 @@
 		8573EE2C29D95C4A008A5DFC /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
 		8573EE2D29D95C4A008A5DFC /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
 		85C0859129DBF6CF005ED157 /* ClosuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresViewController.swift; sourceTree = "<group>"; };
+		85C0A03529E8EFE500027A17 /* RxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
+		85C0A03729E8F79A00027A17 /* RxTabviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTabviewCell.swift; sourceTree = "<group>"; };
+		85C0A03829E8F79A00027A17 /* RxTabviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxTabviewCell.xib; sourceTree = "<group>"; };
+		85C0A03B29E8FFF700027A17 /* RxTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableModel.swift; sourceTree = "<group>"; };
+		85C0A03D29E9259700027A17 /* RxTableviewSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableviewSectionViewController.swift; sourceTree = "<group>"; };
 		85DBA11F29D673D900CED1AD /* UIView+MyUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MyUIView.h"; sourceTree = "<group>"; };
 		85DBA12029D673D900CED1AD /* UIView+MyUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MyUIView.m"; sourceTree = "<group>"; };
 		85DBA12229D67B5C00CED1AD /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -211,6 +226,15 @@
 			path = "Isa-swizzling";
 			sourceTree = "<group>";
 		};
+		8528576929E1AE5F00DDDD11 /* NetWorkManager */ = {
+			isa = PBXGroup;
+			children = (
+				8528576A29E1AEA100DDDD11 /* OCNetWorkManager.h */,
+				8528576B29E1AEA100DDDD11 /* OCNetWorkManager.m */,
+			);
+			path = NetWorkManager;
+			sourceTree = "<group>";
+		};
 		8571793729D9254D005F9906 /* delegate&block */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +272,12 @@
 			isa = PBXGroup;
 			children = (
 				85C0859129DBF6CF005ED157 /* ClosuresViewController.swift */,
+				850DC39029E6FC5300333DBB /* RxTextViewController.swift */,
+				85C0A03529E8EFE500027A17 /* RxTableViewController.swift */,
+				85C0A03729E8F79A00027A17 /* RxTabviewCell.swift */,
+				85C0A03829E8F79A00027A17 /* RxTabviewCell.xib */,
+				85C0A03B29E8FFF700027A17 /* RxTableModel.swift */,
+				85C0A03D29E9259700027A17 /* RxTableviewSectionViewController.swift */,
 			);
 			path = SwiftClass;
 			sourceTree = "<group>";
@@ -395,6 +425,7 @@
 		CAC292BA2147AF89001C0B00 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8528576929E1AE5F00DDDD11 /* NetWorkManager */,
 				85E4567929DFB05700DA9A95 /* Kvo-self */,
 				8500556E29DC6D61009C0425 /* Isa-swizzling */,
 				85B6497029DC5AAA00B48E3E /* NSString */,
@@ -573,6 +604,7 @@
 				CA3514D7214BBAA4000180EC /* RuntimeViewController.xib in Resources */,
 				CAC293122147C38A001C0B00 /* InvocationViewController.xib in Resources */,
 				CAC292C32147AF89001C0B00 /* Main.storyboard in Resources */,
+				85C0A03A29E8F79A00027A17 /* RxTabviewCell.xib in Resources */,
 				CA3514C62149F723000180EC /* ThreadViewController.xib in Resources */,
 				CA3514D1214BB9BD000180EC /* SocketViewController.xib in Resources */,
 			);
@@ -640,10 +672,12 @@
 				85DBA12429D67B5C00CED1AD /* CategoryViewController.m in Sources */,
 				85DBA12A29D682B400CED1AD /* UIButton+OtherButton.m in Sources */,
 				85E4567F29DFB1AB00DA9A95 /* NSObject+Cody_KVO.m in Sources */,
+				850DC39129E6FC5300333DBB /* RxTextViewController.swift in Sources */,
 				85DBA12F29D6C9AB00CED1AD /* Person.m in Sources */,
 				85DBA12729D680A800CED1AD /* UIButton+MyUIButton.m in Sources */,
 				85DBA12129D673D900CED1AD /* UIView+MyUIView.m in Sources */,
 				85E4569029E0410900DA9A95 /* TestProy.m in Sources */,
+				85C0A03E29E9259700027A17 /* RxTableviewSectionViewController.swift in Sources */,
 				8500556D29DC5BBB009C0425 /* BaseViewController.m in Sources */,
 				85C0859229DBF6CF005ED157 /* ClosuresViewController.swift in Sources */,
 				CA3514C52149F723000180EC /* ThreadViewController.m in Sources */,
@@ -652,9 +686,12 @@
 				85DBA13229D6C9C000CED1AD /* Student.m in Sources */,
 				8573EE2E29D95C4A008A5DFC /* CopyViewController.m in Sources */,
 				CA3609BA215B7D9A00DCDF96 /* SSKeyChainViewController.m in Sources */,
+				85C0A03C29E8FFF700027A17 /* RxTableModel.swift in Sources */,
 				CAC292C02147AF89001C0B00 /* ViewController.m in Sources */,
+				85C0A03629E8EFE500027A17 /* RxTableViewController.swift in Sources */,
 				8571793D29D92587005F9906 /* SecondViewController.m in Sources */,
 				8571793A29D92579005F9906 /* FirstViewController.m in Sources */,
+				8528576C29E1AEA100DDDD11 /* OCNetWorkManager.m in Sources */,
 				CAC293152147C4A3001C0B00 /* PAMultipleDelegateManager.m in Sources */,
 				8500557129DC6D9B009C0425 /* ISAExhangeViewController.m in Sources */,
 				CA114408214D3F9100436F5D /* UIControl+Button.m in Sources */,
@@ -667,6 +704,7 @@
 				CAC292CB2147AF8C001C0B00 /* main.m in Sources */,
 				85E4568229DFBCD100DA9A95 /* CodyObserveInfo.m in Sources */,
 				CA3514D0214BB9BD000180EC /* SocketViewController.m in Sources */,
+				85C0A03929E8F79A00027A17 /* RxTabviewCell.swift in Sources */,
 				CA3514D6214BBAA4000180EC /* RuntimeViewController.m in Sources */,
 				CAC293112147C38A001C0B00 /* InvocationViewController.m in Sources */,
 				CAC292BD2147AF89001C0B00 /* AppDelegate.m in Sources */,
@@ -775,7 +813,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -827,7 +865,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -838,13 +876,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B33C14AFCAA8847C61F42E5D /* Pods-TestDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9B25F3UMJN;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TestDemo/TestDemoHeader.pch";
 				INFOPLIST_FILE = TestDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -855,6 +894,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -862,13 +902,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A69685781B17378E10DDE2B /* Pods-TestDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9B25F3UMJN;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TestDemo/TestDemoHeader.pch";
 				INFOPLIST_FILE = TestDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -878,6 +919,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "TestDemo/TestDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

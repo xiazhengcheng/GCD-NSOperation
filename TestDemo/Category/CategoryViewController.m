@@ -11,7 +11,7 @@
 #import "UIButton+MyUIButton.h"
 #import "Student.h"
 #import <objc/message.h>
-#import "TestDemo-swift.h"
+#import "TestDemo-Swift.h"
 
 @interface CategoryViewController () {
     UIButton *button;

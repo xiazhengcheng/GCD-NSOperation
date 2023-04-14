@@ -32,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"分类";
-    _dataArray = [[NSMutableArray alloc] initWithObjects:@"多代理的实现",@"多线程",@"runtime方法替换",@"UIWebView",@"WKWebView",@"SSKeychain", @"Category", @"delegate&&block",@"copy",@"swiftClosure",@"字符串",@"ISA_change",@"自定义kvo", nil];
+    _dataArray = [[NSMutableArray alloc] initWithObjects:@"多代理的实现",@"多线程",@"runtime方法替换",@"UIWebView",@"WKWebView",@"SSKeychain", @"Category", @"delegate&&block",@"copy",@"swiftClosure",@"字符串",@"ISA_change",@"自定义kvo",@"rxSwift",@"rxtableView",@"sectionTableView", nil];
     [self createTabView];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -136,6 +136,21 @@
             break;
         case 12:{
             SelfKvoViewController *ivc = [[SelfKvoViewController alloc] init];
+            [self.navigationController pushViewController: ivc animated:YES];
+        }
+            break;
+        case 13:{
+            RxTextViewController *ivc = [[RxTextViewController alloc] init];
+            [self.navigationController pushViewController: ivc animated:YES];
+        }
+            break;
+        case 14:{
+            RxTableViewController *ivc = [[RxTableViewController alloc] init];
+            [self.navigationController pushViewController: ivc animated:YES];
+        }
+            break;
+        case 15:{
+            RxTableviewSectionViewController *ivc = [[RxTableviewSectionViewController alloc] init];
             [self.navigationController pushViewController: ivc animated:YES];
         }
             break;
