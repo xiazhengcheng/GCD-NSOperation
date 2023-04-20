@@ -10,7 +10,7 @@
 #import <objc/message.h>
 
 @implementation UIButton (MyUIButton)
-- (void)click {
+- (void)addTarget:(nullable id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents {
     NSLog(@"UIButton Click");
 }
 

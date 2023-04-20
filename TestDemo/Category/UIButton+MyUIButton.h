@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (MyUIButton)
 @property (nonatomic,copy) NSString *name;
-- (void)click;
+- (void)addTarget:(nullable id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
 
 @end
 

@@ -7,14 +7,38 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class ClosuresViewController: BaseViewController {
     
     var completionHandlers: [() -> Void] = []
     var x = 10
+    let disposeBag = DisposeBag()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let button = UIButton()
+        button.setTitle("CLICK", for: .normal)
+        button.backgroundColor = .red
+        button.rx.tap
+            .subscribe(onNext: {[weak self] in
+                
+                print("点击--------------------")
+                self?.navigationController?.pushViewController(Closure2ViewController(), animated: true)
+            })
+            .disposed(by: disposeBag)
+        view.addSubview(button)
+        
+        button.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(200)
+            $0.left.equalToSuperview().offset(50)
+            $0.right.equalToSuperview().offset(-50)
+            $0.height.equalTo(30)
+        }
+        
         commonClosure()
         //不使用尾随闭包进行调用
         let incrementByTen = makeIncrement(forIncrement: 10)

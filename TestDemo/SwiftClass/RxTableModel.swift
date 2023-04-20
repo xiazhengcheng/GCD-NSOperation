@@ -64,6 +64,13 @@ class SectionData {
             SectionDataModel(firstName: "plan BBB", secondName: "BBB description"),
             SectionDataModel(firstName: "plan CCC", secondName: "CCC description"),
             SectionDataModel(firstName: "plan DDD", secondName: "DDD description"),
+        ]),
+        SectionModel(model: "four", items: [
+            SectionDataModel(firstName: "plan AAA", secondName: "AAA description"),
+            SectionDataModel(firstName: "plan BBB", secondName: "BBB description"),
+            SectionDataModel(firstName: "plan CCC", secondName: "CCC description"),
+            SectionDataModel(firstName: "plan DDD", secondName: "DDD description"),
+            SectionDataModel(firstName: "plan EEE", secondName: "EEE description"),
         ])
     ])
 }

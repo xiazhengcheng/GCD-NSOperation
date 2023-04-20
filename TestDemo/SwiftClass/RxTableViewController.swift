@@ -57,13 +57,14 @@ extension RxTableViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel(frame: CGRect.zero)
-           label.text = "123"
-           label.textColor = UIColor.white
-           label.backgroundColor = UIColor.darkGray
-           label.alpha = 0.9
-            
-           return label
+        label.text = "123"
+        label.textColor = UIColor.white
+        label.backgroundColor = UIColor.darkGray
+        label.alpha = 0.9
+        
+        return label
     }
+    
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 40
@@ -73,11 +74,11 @@ extension RxTableViewController: UITableViewDelegate {
         tableView.rx.modelSelected(DataModel.self).subscribe { [weak self](model) in
             print("modelSelected触发了cell点击，\(model)")
         }.disposed(by: disposeBag)
-
+        
         tableView.rx.itemDeleted.subscribe(onNext: {index in
             print(index)
         })
         .disposed(by: disposeBag)
-
+        
     }
 }

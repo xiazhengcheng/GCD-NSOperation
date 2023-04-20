@@ -30,7 +30,6 @@ class RxTextViewController: BaseViewController {
         userNameTextfield.rx.text
             .subscribe { value in
                 print("value")
-                
             }
             .disposed(by: disposeBag)
         

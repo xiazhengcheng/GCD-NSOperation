@@ -9,5 +9,11 @@ pod 'RxSwift'
 pod 'RxCocoa'
 pod 'RxDataSources'
 pod 'SnapKit'
+pod 'ReactiveObjC'
+pod 'Alamofire'
+pod 'Kingfisher'
+pod 'Moya'
+pod 'HandyJSON'
+pod 'SwiftyJSON'
 
 end

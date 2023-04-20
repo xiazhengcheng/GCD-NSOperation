@@ -15,12 +15,17 @@
 		8571793A29D92579005F9906 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571793929D92579005F9906 /* FirstViewController.m */; };
 		8571793D29D92587005F9906 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571793C29D92587005F9906 /* SecondViewController.m */; };
 		8573EE2E29D95C4A008A5DFC /* CopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8573EE2D29D95C4A008A5DFC /* CopyViewController.m */; };
+		85B0BA7D29EA997F00646050 /* Closure2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B0BA7C29EA997F00646050 /* Closure2ViewController.swift */; };
 		85C0859229DBF6CF005ED157 /* ClosuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0859129DBF6CF005ED157 /* ClosuresViewController.swift */; };
 		85C0A03629E8EFE500027A17 /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0A03529E8EFE500027A17 /* RxTableViewController.swift */; };
 		85C0A03929E8F79A00027A17 /* RxTabviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0A03729E8F79A00027A17 /* RxTabviewCell.swift */; };
 		85C0A03A29E8F79A00027A17 /* RxTabviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C0A03829E8F79A00027A17 /* RxTabviewCell.xib */; };
 		85C0A03C29E8FFF700027A17 /* RxTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0A03B29E8FFF700027A17 /* RxTableModel.swift */; };
 		85C0A03E29E9259700027A17 /* RxTableviewSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0A03D29E9259700027A17 /* RxTableviewSectionViewController.swift */; };
+		85C7F7C629F1163000BE9E81 /* AlamofireRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7F7C529F1163000BE9E81 /* AlamofireRequestViewController.swift */; };
+		85C7F7C829F11A9700BE9E81 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7F7C729F11A9700BE9E81 /* ApiProvider.swift */; };
+		85C7F7CA29F1766C00BE9E81 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7F7C929F1766C00BE9E81 /* CommonModel.swift */; };
+		85D3E1A229EF9D4C0022D153 /* RacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D3E1A129EF9D4C0022D153 /* RacViewController.m */; };
 		85DBA12129D673D900CED1AD /* UIView+MyUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12029D673D900CED1AD /* UIView+MyUIView.m */; };
 		85DBA12429D67B5C00CED1AD /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12329D67B5C00CED1AD /* CategoryViewController.m */; };
 		85DBA12729D680A800CED1AD /* UIButton+MyUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA12629D680A800CED1AD /* UIButton+MyUIButton.m */; };
@@ -93,12 +98,18 @@
 		8571793C29D92587005F9906 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		8573EE2C29D95C4A008A5DFC /* CopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyViewController.h; sourceTree = "<group>"; };
 		8573EE2D29D95C4A008A5DFC /* CopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyViewController.m; sourceTree = "<group>"; };
+		85B0BA7C29EA997F00646050 /* Closure2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure2ViewController.swift; sourceTree = "<group>"; };
 		85C0859129DBF6CF005ED157 /* ClosuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresViewController.swift; sourceTree = "<group>"; };
 		85C0A03529E8EFE500027A17 /* RxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
 		85C0A03729E8F79A00027A17 /* RxTabviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTabviewCell.swift; sourceTree = "<group>"; };
 		85C0A03829E8F79A00027A17 /* RxTabviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxTabviewCell.xib; sourceTree = "<group>"; };
 		85C0A03B29E8FFF700027A17 /* RxTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableModel.swift; sourceTree = "<group>"; };
 		85C0A03D29E9259700027A17 /* RxTableviewSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableviewSectionViewController.swift; sourceTree = "<group>"; };
+		85C7F7C529F1163000BE9E81 /* AlamofireRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequestViewController.swift; sourceTree = "<group>"; };
+		85C7F7C729F11A9700BE9E81 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		85C7F7C929F1766C00BE9E81 /* CommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
+		85D3E1A029EF9D4C0022D153 /* RacViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RacViewController.h; sourceTree = "<group>"; };
+		85D3E1A129EF9D4C0022D153 /* RacViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RacViewController.m; sourceTree = "<group>"; };
 		85DBA11F29D673D900CED1AD /* UIView+MyUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MyUIView.h"; sourceTree = "<group>"; };
 		85DBA12029D673D900CED1AD /* UIView+MyUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MyUIView.m"; sourceTree = "<group>"; };
 		85DBA12229D67B5C00CED1AD /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
@@ -278,6 +289,7 @@
 				85C0A03829E8F79A00027A17 /* RxTabviewCell.xib */,
 				85C0A03B29E8FFF700027A17 /* RxTableModel.swift */,
 				85C0A03D29E9259700027A17 /* RxTableviewSectionViewController.swift */,
+				85B0BA7C29EA997F00646050 /* Closure2ViewController.swift */,
 			);
 			path = SwiftClass;
 			sourceTree = "<group>";
@@ -289,6 +301,25 @@
 				8500556C29DC5BBB009C0425 /* BaseViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		85C7F7C429F115FC00BE9E81 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				85C7F7C529F1163000BE9E81 /* AlamofireRequestViewController.swift */,
+				85C7F7C729F11A9700BE9E81 /* ApiProvider.swift */,
+				85C7F7C929F1766C00BE9E81 /* CommonModel.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		85D3E19F29EF9D300022D153 /* Rac */ = {
+			isa = PBXGroup;
+			children = (
+				85D3E1A029EF9D4C0022D153 /* RacViewController.h */,
+				85D3E1A129EF9D4C0022D153 /* RacViewController.m */,
+			);
+			path = Rac;
 			sourceTree = "<group>";
 		};
 		85DBA11E29D6729C00CED1AD /* Category */ = {
@@ -425,6 +456,8 @@
 		CAC292BA2147AF89001C0B00 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				85C7F7C429F115FC00BE9E81 /* Alamofire */,
+				85D3E19F29EF9D300022D153 /* Rac */,
 				8528576929E1AE5F00DDDD11 /* NetWorkManager */,
 				85E4567929DFB05700DA9A95 /* Kvo-self */,
 				8500556E29DC6D61009C0425 /* Isa-swizzling */,
@@ -671,6 +704,7 @@
 			files = (
 				85DBA12429D67B5C00CED1AD /* CategoryViewController.m in Sources */,
 				85DBA12A29D682B400CED1AD /* UIButton+OtherButton.m in Sources */,
+				85B0BA7D29EA997F00646050 /* Closure2ViewController.swift in Sources */,
 				85E4567F29DFB1AB00DA9A95 /* NSObject+Cody_KVO.m in Sources */,
 				850DC39129E6FC5300333DBB /* RxTextViewController.swift in Sources */,
 				85DBA12F29D6C9AB00CED1AD /* Person.m in Sources */,
@@ -697,12 +731,16 @@
 				CA114408214D3F9100436F5D /* UIControl+Button.m in Sources */,
 				85E4568529DFC0FA00DA9A95 /* SelfKvoViewController.m in Sources */,
 				8500556A29DC5AE9009C0425 /* NSStringViewController.m in Sources */,
+				85D3E1A229EF9D4C0022D153 /* RacViewController.m in Sources */,
+				85C7F7CA29F1766C00BE9E81 /* CommonModel.swift in Sources */,
 				CAC2931B2148A66C001C0B00 /* CatTest.m in Sources */,
 				85E4568D29E03F5A00DA9A95 /* CodyProxy.m in Sources */,
 				CA1144122153458E00436F5D /* WebViewController.m in Sources */,
+				85C7F7C629F1163000BE9E81 /* AlamofireRequestViewController.swift in Sources */,
 				CAC293182148A660001C0B00 /* DogTest.m in Sources */,
 				CAC292CB2147AF8C001C0B00 /* main.m in Sources */,
 				85E4568229DFBCD100DA9A95 /* CodyObserveInfo.m in Sources */,
+				85C7F7C829F11A9700BE9E81 /* ApiProvider.swift in Sources */,
 				CA3514D0214BB9BD000180EC /* SocketViewController.m in Sources */,
 				85C0A03929E8F79A00027A17 /* RxTabviewCell.swift in Sources */,
 				CA3514D6214BBAA4000180EC /* RuntimeViewController.m in Sources */,
